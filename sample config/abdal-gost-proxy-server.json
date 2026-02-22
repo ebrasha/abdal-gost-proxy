@@ -1,0 +1,32 @@
+{
+  "listen_address": "0.0.0.0",
+  "listen_port": 443,
+  "protocol": "vless",
+  "users": [
+    {
+      "id": "e3e96803-cb62-4bf0-8c5e-71cd02628430",
+      "email": "admin@abdal",
+      "flow": "xtls-rprx-vision"
+    }
+  ],
+  "reality_settings": {
+    "enabled": true,
+    "dest": "www.google.com:443",
+    "server_names": ["www.google.com", "google.com"],
+    "private_key": "HDuVNY8jkEkYJWKd0V2V6utGN-clr1J_bJr6292uOPg",
+    "short_ids": ["1a2b3c4d5e6f", "0987654321ab"]
+  },
+  "transport": {
+    "type": "grpc",
+    "service_name": "abdal-grpc-stream",
+    "multi_mode": true
+  },
+  "fallback": {
+    "dest": 80,
+    "xver": 0
+  },
+  "gost_config": {
+    "enable_chaining": true,
+    "max_connections": 1000
+  }
+}

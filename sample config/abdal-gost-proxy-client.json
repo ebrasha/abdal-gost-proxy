@@ -1,0 +1,19 @@
+{
+  "local_port": 10808,
+  "server_addr": "82.115.13.209",
+  "server_port": 443,
+  "uuid": "e3e96803-cb62-4bf0-8c5e-71cd02628430",
+  "reality_public_key": "NlplsdGXg8x2vbAfHSuFLoqkJ7wgLscR8-ezLuQMJlY",
+  "short_id": "1a2b3c4d5e6f",
+  "sni": "www.google.com",
+  "fingerprint": "chrome",
+  "transport": "grpc",
+  "service_name": "abdal-grpc-stream",
+  "health_check": {
+    "enabled": true,
+    "interval_seconds": 5,
+    "timeout_seconds": 3,
+    "max_retries": 3,
+    "check_url": "http://www.google.com/generate_204"
+  }
+}
