@@ -16,7 +16,7 @@
 - **بدون نیاز به گواهی SSL اختصاصی** روی سرور: Reality ظاهر ترافیک را شبیه یک سایت واقعی می‌کند، بنابراین سرور به گواهی TLS خودش نیاز ندارد.
 - **استفاده از یک پروکسی SOCKS5 محلی** روی رایانه؛ مرورگر یا اپلیکیشن‌ها را روی این پروکسی تنظیم می‌کنید و ترافیک از طریق تونل به سرور شما فرستاده می‌شود.
 
-این پروژه از ایده‌های **[Gost](https://github.com/go-gost/gost)** برای مدیریت تونل و **[Xray-core](https://github.com/XTLS/Xray-core)** برای پروتکل VLESS و امنیت Reality استفاده می‌کند.
+این پروژه از  **[Gost](https://github.com/go-gost/gost)** برای مدیریت تونل و **[Xray-core](https://github.com/XTLS/Xray-core)** برای پروتکل VLESS و امنیت Reality استفاده می‌کند.
 
 ---
 
@@ -101,14 +101,7 @@ go run ./tools/reality-keygen
 - **private_key** — فقط سرور؛ در `abdal-gost-proxy-server.json` → `reality_settings.private_key`.
 - **reality_public_key** — فقط کلاینت؛ در `abdal-gost-proxy-client.json` → `reality_public_key`.
 
-ساخت **short_id** (مثلاً هگز):
-
-```bash
-openssl rand -hex 8
-```
-
-یک یا چند مقدار در `reality_settings.short_ids` سرور بگذارید و یکی را در `short_id` کلاینت استفاده کنید.
-
+ 
 ---
 
 ### ۲. تنظیمات سرور: `abdal-gost-proxy-server.json`

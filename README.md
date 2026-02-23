@@ -101,14 +101,7 @@ You get:
 - **private_key** — Server only; put in `abdal-gost-proxy-server.json` → `reality_settings.private_key`.
 - **reality_public_key** — Client only; put in `abdal-gost-proxy-client.json` → `reality_public_key`.
 
-Generate **short_id** (e.g. hex):
-
-```bash
-openssl rand -hex 8
-```
-
-Use one or more in server `reality_settings.short_ids` and pick one for client `short_id`.
-
+ 
 ---
 
 ### 2. Server config: `abdal-gost-proxy-server.json`
