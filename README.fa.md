@@ -126,6 +126,8 @@ go run ./tools/reality-keygen
 
 ### ۲. تنظیمات سرور: `abdal-gost-proxy-server.json`
 
+<div dir="rtl">
+
 | فیلد | توضیح |
 |------|--------|
 | `listen_address` | آدرس شنود (مثلاً `0.0.0.0`). |
@@ -142,7 +144,14 @@ go run ./tools/reality-keygen
 | `fallback.dest` | پورت یا host:port برای Fallback در صورت نیاز. |
 | `fallback.xver` | نسخه Proxy Protocol (مثلاً `0`). |
 
+</div>
+
+
 **گزینه‌های پشتیبانی‌شده (سرور):**
+
+
+<div dir="rtl">
+
 
 | گزینه | مقادیر مجاز / توضیح |
 |--------|------------------------|
@@ -158,6 +167,9 @@ go run ./tools/reality-keygen
 | `transport.multi_mode` | `true` یا `false`. |
 | `fallback.dest` | عدد (فقط پورت، مثلاً `80`) یا رشته `"host:port"`. |
 | `fallback.xver` | `0` (خاموش)، `1` یا `2` (Proxy Protocol). |
+
+</div>
+
 
 نمونهٔ کمینه:
 
